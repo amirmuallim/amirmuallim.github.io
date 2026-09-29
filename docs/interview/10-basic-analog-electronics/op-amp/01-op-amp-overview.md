@@ -1,10 +1,12 @@
 ---
 tags:
   - Analog-Basic-Electronics
+title: "Op-Amp overview"
 ---
 
 # Op-Amp overview
 
+## Answer
 
 **Operational Amplifier (Op-Amp) – Interview Preparation**
 

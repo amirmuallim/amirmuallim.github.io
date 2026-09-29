@@ -1,10 +1,10 @@
 ---
 tags:
   - Verilog
+title: "60% duty cycle code"
 ---
 
 # 60% duty cycle code
-
 
 ## Code
 
@@ -48,4 +48,3 @@ The counter runs 0 → 4 (five states) and the output is high while `counter < 3
 
 ??? question "Likely follow-up: how do you get 50% with an odd divider?"
     Use a posedge-triggered and a negedge-triggered divider and OR their outputs (the standard odd-divide-by-N technique).
-

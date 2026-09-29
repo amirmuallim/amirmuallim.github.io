@@ -1,0 +1,28 @@
+:root { --md-text-font: "Inter", sans-serif; }
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0a0e14; --md-default-bg-color--light: #11161e;
+  --md-default-fg-color: #e6eaf0; --md-default-fg-color--light: #a3adbd;
+  --md-primary-fg-color: #0a0e14; --md-accent-fg-color: #7c9cff;
+  --md-typeset-a-color: #8fb0ff; --md-code-bg-color: #0f141c; --md-code-fg-color: #dbe3f0;
+  --md-footer-bg-color: #0a0e14; --grad: linear-gradient(90deg,#7c9cff,#39d0c6);
+}
+.md-header { background: rgba(10,14,20,.8); backdrop-filter: blur(12px); border-bottom: 1px solid #1c2430; box-shadow: none; }
+.md-tabs { background: transparent; border-bottom: 1px solid #1c2430; }
+.md-sidebar { padding-top: .6rem; }
+.md-nav__link--active { color: var(--md-accent-fg-color) !important; font-weight: 600; }
+.md-nav__item--section > .md-nav__link { text-transform: uppercase; letter-spacing: .04em; font-size: .62rem; opacity: .8; }
+.md-typeset h1 { font-weight: 700; letter-spacing: -.02em; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.md-typeset h2 { font-weight: 650; margin-top: 2rem; padding-bottom: .3rem; border-bottom: 1px solid #1c2430; }
+.md-typeset pre > code, .md-typeset .highlight { border-radius: 12px; }
+.md-typeset .highlight { border: 1px solid #1c2430; }
+.md-typeset code { border-radius: 6px; font-family: "JetBrains Mono", monospace; }
+.md-typeset .admonition, .md-typeset details { border-radius: 12px; border-width: 1px; background: #0f141c; box-shadow: none; overflow: hidden; }
+.md-typeset details > summary { font-weight: 600; padding-top: .6rem; padding-bottom: .6rem; }
+.md-typeset details[open] > summary, .md-typeset details:hover > summary { background: #151c27; }
+.md-typeset table:not([class]) { border-radius: 12px; border: 1px solid #1c2430; overflow: hidden; }
+.md-typeset table:not([class]) th { background: #151c27; }
+.md-typeset img { border-radius: 10px; border: 1px solid #1c2430; background: #fff; padding: 6px; }
+.md-typeset .md-button { border-radius: 999px; padding: .5em 1.4em; font-weight: 600; border-color: #2a3546; }
+.md-typeset .md-button--primary { background: var(--grad); border: 0; color: #06101a; }
+.md-search__form { border-radius: 999px; }
+.md-footer { border-top: 1px solid #1c2430; }

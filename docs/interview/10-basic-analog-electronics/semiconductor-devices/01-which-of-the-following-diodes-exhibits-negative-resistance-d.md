@@ -1,10 +1,12 @@
 ---
 tags:
   - Analog-Basic-Electronics
+title: "Which of the following diodes exhibits negative resistance due to\u2026"
 ---
 
 # Which of the following diodes exhibits negative resistance due to quantum tunneling?
 
+## Answer
 
 Tunnel diode
 

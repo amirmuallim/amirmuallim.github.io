@@ -1,10 +1,12 @@
 ---
 tags:
   - Digital-Electronics
+title: "Explain the VLSI design flow"
 ---
 
 # Explain the VLSI design flow
 
+## Answer
 
 The VLSI design flow starts with the specification, where the required functionality and performance are defined. Then we develop the architecture and microarchitecture and implement it as RTL using Verilog or SystemVerilog. The RTL is functionally verified using simulation, assertions, coverage, formal methods and methodologies such as UVM.
 

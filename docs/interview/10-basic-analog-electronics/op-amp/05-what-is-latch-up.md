@@ -1,10 +1,12 @@
 ---
 tags:
   - Analog-Basic-Electronics
+title: "What is Latch-up?"
 ---
 
 # What is Latch-up?
 
+## Answer
 
 **Definition:**
 

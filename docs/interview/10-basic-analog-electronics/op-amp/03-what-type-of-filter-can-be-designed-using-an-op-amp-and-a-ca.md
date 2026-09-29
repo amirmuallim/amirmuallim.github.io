@@ -1,10 +1,12 @@
 ---
 tags:
   - Analog-Basic-Electronics
+title: "What type of filter can be designed using an op-amp and a capacitor?"
 ---
 
 # What type of filter can be designed using an op-amp and a capacitor?
 
+## Answer
 
 **Active low-pass filter**
 

@@ -1,10 +1,12 @@
 ---
 tags:
   - Digital-Electronics
+title: "What is Metastability in digital circuits?"
 ---
 
 # What is Metastability in digital circuits? Why does it occur, and how does a 2-flip-flop synchronizer mitigate it?
 
+## Answer
 
 **Metastability is a condition where a flip-flop temporarily fails to resolve to a valid logic 0 or 1.**
 

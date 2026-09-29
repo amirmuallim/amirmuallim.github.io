@@ -1,10 +1,10 @@
 ---
 tags:
   - Verilog
+title: "Rising/falling/ Edge Detection"
 ---
 
 # Rising/falling/ Edge Detection
-
 
 ## Code (rising edge)
 
@@ -50,4 +50,3 @@ endmodule
 
 !!! warning "Common trap"
     `sig_in` must be synchronous to `clk`. An asynchronous input needs a 2-flop synchronizer first, otherwise metastability can corrupt `sig_d` and `pulse`.
-

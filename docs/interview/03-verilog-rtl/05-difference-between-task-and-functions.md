@@ -1,10 +1,12 @@
 ---
 tags:
   - Verilog
+title: "Difference between Task and functions"
 ---
 
 # Difference between Task and functions
 
+## Answer
 
 Both are ways to encapsulate reusable code inside a module, but they differ in what they can do and how they behave in simulation timing.
 

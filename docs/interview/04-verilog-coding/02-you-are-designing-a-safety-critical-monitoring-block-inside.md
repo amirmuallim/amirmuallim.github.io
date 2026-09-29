@@ -1,6 +1,7 @@
 ---
 tags:
   - Verilog
+title: "Parity-safe counter (safety-critical block)"
 ---
 
 # Parity-safe counter (safety-critical block)

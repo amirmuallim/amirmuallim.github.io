@@ -4,14 +4,15 @@ theme:
   name: material
   palette:
     scheme: slate
-    primary: black
-    accent: green
+    primary: custom
+    accent: custom
   font:
     text: Inter
     code: JetBrains Mono
   features:
     - navigation.tabs
-    - navigation.sections
+    - navigation.footer
+    - navigation.path
     - navigation.top
     - navigation.indexes
     - search.suggest
@@ -21,6 +22,7 @@ theme:
     - toc.follow
 plugins:
   - search
+  - awesome-nav
   - tags
 markdown_extensions:
   - admonition
@@ -43,3 +45,5 @@ markdown_extensions:
 extra_javascript:
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+  - stylesheets/extra.css

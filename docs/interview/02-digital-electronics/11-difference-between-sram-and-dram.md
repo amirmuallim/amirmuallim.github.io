@@ -1,10 +1,12 @@
 ---
 tags:
   - Digital-Electronics
+title: "Difference between SRAM and DRAM"
 ---
 
 # Difference between SRAM and DRAM
 
+## Answer
 
 SRAM and DRAM are both volatile memories, but they store data differently.
 

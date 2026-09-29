@@ -1,163 +1,173 @@
 ---
 tags:
   - Digital-Electronics
+title: "NOTES Combinational"
 ---
 
 # NOTES Combinational
 
+??? note "Half and Full Adder"
 
-## Half and Full Adder
+    Sum = A ^ B
 
-Sum = A ^ B
+    Carry = A & B
 
-Carry = A & B
+    Sum = A ^ B ^ Cin
 
-Sum = A ^ B ^ Cin
+    Cout = (A & B) \| (B & Cin) \| (A & Cin)
 
-Cout = (A & B) \| (B & Cin) \| (A & Cin)
+    Cout​=AB + Cin​(A^B)
 
-Cout​=AB + Cin​(A^B)
+    ![](../../assets/qa/image7.png){ loading=lazy }
 
-![](../../assets/qa/image7.png){ loading=lazy }
+??? note "Half and Full Subtractor"
 
-## Half and Full Subtractor
+    Half Subtractor:  
+    D = A ⊕ B  
+    Bout = A̅B
 
-Half Subtractor:  
-D = A ⊕ B  
-Bout = A̅B
+    Full Subtractor:  
+    D = A ⊕ B ⊕ Bin  
+    Bout = A̅B + A̅Bin + BBin
 
-Full Subtractor:  
-D = A ⊕ B ⊕ Bin  
-Bout = A̅B + A̅Bin + BBin
+    Equivalent form:  
+    Bout = A̅B + Bin(A ⊙ B)
 
-Equivalent form:  
-Bout = A̅B + Bin(A ⊙ B)
+??? note "Full Adder using MUX"
 
-## Full Adder using MUX
 
-## How many full adders and half adders are required to design an m-bit adder?
 
-$${\boxed{\text{Half~Adders} = 1}
-}\boxed{\text{Full~Adders} = m - 1}$$
+??? note "How many full adders and half adders are required to design an m-bit adder?"
 
-This is for RPA, without cin, if cin the m FA are required
+    $${\boxed{\text{Half~Adders} = 1}
+    }\boxed{\text{Full~Adders} = m - 1}$$
 
-## How many JK flip-flops are required to implement a 3-decade BCD counter?
+    This is for RPA, without cin, if cin the m FA are required
 
-A BCD decade = **4 FFs**, so a 3-decade BCD counter = **3 × 4 = 12 FFs**.
+??? note "How many JK flip-flops are required to implement a 3-decade BCD counter?"
 
-Note that although 4 FFs provide 16 possible binary states, states **1010–1111 (10–15)** are unused in a BCD counter.
+    A BCD decade = **4 FFs**, so a 3-decade BCD counter = **3 × 4 = 12 FFs**.
 
-## How many 4:1 MUX req to build 512:1 Mux
+    Note that although 4 FFs provide 16 possible binary states, states **1010–1111 (10–15)** are unused in a BCD counter.
 
-**General shortcut:**
+??? note "How many 4:1 MUX req to build 512:1 Mux"
 
-For $4^{n}:1$MUX:
+    **General shortcut:**
 
-$$\frac{N - 1}{4 - 1}
-$$
+    For $4^{n}:1$MUX:
 
-For 512:
+    $$\frac{N - 1}{4 - 1}
+    $$
 
-$$\frac{512 - 1}{3} = 170.33$$
+    For 512:
 
-$$\boxed{170\text{~×~4:1~MUXes} + 1\text{~×~2:1~MUX}}
-$$
+    $$\frac{512 - 1}{3} = 170.33$$
 
-If you are asked **only for 4:1 MUXes**, the answer is **170**, but you need one 2:1 MUX to get the final output.
+    $$\boxed{170\text{~×~4:1~MUXes} + 1\text{~×~2:1~MUX}}
+    $$
 
-## How many OR GATES to implement DECIMAL TO BCD Encoder
+    If you are asked **only for 4:1 MUXes**, the answer is **170**, but you need one 2:1 MUX to get the final output.
 
-For a **Decimal-to-BCD encoder**, there are:
+??? note "How many OR GATES to implement DECIMAL TO BCD Encoder"
 
-- **10 inputs**: $D_{0}$to $D_{9}$
+    For a **Decimal-to-BCD encoder**, there are:
 
-- **4 outputs**: $Y_{3},Y_{2},Y_{1},Y_{0}$
+    - **10 inputs**: $D_{0}$to $D_{9}$
 
-The output equations are:
+    - **4 outputs**: $Y_{3},Y_{2},Y_{1},Y_{0}$
 
-$${Y_{3} = D_{8} + D_{9}
-}{Y_{2} = D_{4} + D_{5} + D_{6} + D_{7}
-}{Y_{1} = D_{2} + D_{3} + D_{6} + D_{7}
-}{Y_{0} = D_{1} + D_{3} + D_{5} + D_{7} + D_{9}
-}$$
+    The output equations are:
 
-If **multi-input OR gates are allowed**, you need:
+    $${Y_{3} = D_{8} + D_{9}
+    }{Y_{2} = D_{4} + D_{5} + D_{6} + D_{7}
+    }{Y_{1} = D_{2} + D_{3} + D_{6} + D_{7}
+    }{Y_{0} = D_{1} + D_{3} + D_{5} + D_{7} + D_{9}
+    }$$
 
-$$\boxed{4\text{~OR~gates}}
-$$**If only 2-input OR gates are allowed**
+    If **multi-input OR gates are allowed**, you need:
 
-**11 or gates**
+    $$\boxed{4\text{~OR~gates}}
+    $$**If only 2-input OR gates are allowed**
 
-## Anti coincidence – xor gate
+    **11 or gates**
 
-## Coincidence – xnor gate
+??? note "Anti coincidence – xor gate"
 
-## If the address bus = 30 bits, then the number of unique addresses is:
 
-$$2^{30}
-$$
 
-Assuming **each address points to 1 byte**:
+??? note "Coincidence – xnor gate"
 
-$${\text{Memory~size} = 2^{30}\text{~bytes}
-}{= \boxed{1\text{~GB}}
-}$$Answer: 1 GB
 
-## CLA – Carry Look Ahead Adder
 
-**Carry Look-Ahead Adder (CLA)**
+??? note "If the address bus = 30 bits, then the number of unique addresses is:"
 
-For bit position i:
+    $$2^{30}
+    $$
 
-Generate:  
-Gᵢ = AᵢBᵢ
+    Assuming **each address points to 1 byte**:
 
-Propagate:  
-Pᵢ = Aᵢ ⊕ Bᵢ
+    $${\text{Memory~size} = 2^{30}\text{~bytes}
+    }{= \boxed{1\text{~GB}}
+    }$$Answer: 1 GB
 
-Carry:  
-Cᵢ₊₁ = Gᵢ + PᵢCᵢ
+??? note "CLA – Carry Look Ahead Adder"
 
-Sum:  
-Sᵢ = Pᵢ ⊕ Cᵢ
+    **Carry Look-Ahead Adder (CLA)**
 
-**4-bit CLA**
+    For bit position i:
 
-C₁ = G₀ + P₀C₀
+    Generate:  
+    Gᵢ = AᵢBᵢ
 
-C₂ = G₁ + P₁G₀ + P₁P₀C₀
+    Propagate:  
+    Pᵢ = Aᵢ ⊕ Bᵢ
 
-C₃ = G₂ + P₂G₁ + P₂P₁G₀ + P₂P₁P₀C₀
+    Carry:  
+    Cᵢ₊₁ = Gᵢ + PᵢCᵢ
 
-C₄ = G₃ + P₃G₂ + P₃P₂G₁ + P₃P₂P₁G₀ + P₃P₂P₁P₀C₀
+    Sum:  
+    Sᵢ = Pᵢ ⊕ Cᵢ
 
-Sum equations:
+    **4-bit CLA**
 
-S₀ = P₀ ⊕ C₀
+    C₁ = G₀ + P₀C₀
 
-S₁ = P₁ ⊕ C₁
+    C₂ = G₁ + P₁G₀ + P₁P₀C₀
 
-S₂ = P₂ ⊕ C₂
+    C₃ = G₂ + P₂G₁ + P₂P₁G₀ + P₂P₁P₀C₀
 
-S₃ = P₃ ⊕ C₃
+    C₄ = G₃ + P₃G₂ + P₃P₂G₁ + P₃P₂P₁G₀ + P₃P₂P₁P₀C₀
 
-## CSKA – Carry Skip Adder and CSA – Carry Save Adder
+    Sum equations:
 
-## BCD ADDITION
+    S₀ = P₀ ⊕ C₀
 
-> **Rule for BCD addition**
+    S₁ = P₁ ⊕ C₁
 
-1.  Add the two 4-bit BCD digits using normal binary addition.
+    S₂ = P₂ ⊕ C₂
 
-2.  If the result is **greater than 9 (1001)** OR there is a **carry out**, add **0110 (decimal 6)**.
+    S₃ = P₃ ⊕ C₃
 
-3.  The resulting 4 bits are the valid BCD digit, and any carry goes to the next decimal digit.
+??? note "CSKA – Carry Skip Adder and CSA – Carry Save Adder"
 
-## X0R USING NAND, XNOR USING NOR
 
-![](../../assets/qa/image8.png){ loading=lazy } a xnor b
 
-![](../../assets/qa/image9.png){ loading=lazy }
+??? note "BCD ADDITION"
 
-## AND, OR, NOT, XOR, NAND, NOR, XNOR USING 2:1 MUX
+    > **Rule for BCD addition**
+
+    1.  Add the two 4-bit BCD digits using normal binary addition.
+
+    2.  If the result is **greater than 9 (1001)** OR there is a **carry out**, add **0110 (decimal 6)**.
+
+    3.  The resulting 4 bits are the valid BCD digit, and any carry goes to the next decimal digit.
+
+??? note "X0R USING NAND, XNOR USING NOR"
+
+    ![](../../assets/qa/image8.png){ loading=lazy } a xnor b
+
+    ![](../../assets/qa/image9.png){ loading=lazy }
+
+??? note "AND, OR, NOT, XOR, NAND, NOR, XNOR USING 2:1 MUX"
+
+

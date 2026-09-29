@@ -1,10 +1,12 @@
 ---
 tags:
   - Verilog
+title: "What is Verilog parallel case and full case statements?"
 ---
 
 # What is Verilog parallel case and full case statements?
 
+## Answer
 
 Full + Parallel
 

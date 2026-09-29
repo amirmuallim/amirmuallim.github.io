@@ -1,10 +1,12 @@
 ---
 tags:
   - SystemVerilog
+title: "What is the difference between Shallow copy and Deep copy?"
 ---
 
 # What is the difference between Shallow copy and Deep copy?
 
+## Answer
 
 **The main difference is how nested objects are copied.**
 
@@ -16,4 +18,6 @@ For example, suppose a transaction object contains another object called header.
 
 With a deep copy, each transaction gets its own header object, so modifying one doesn't affect the other.
 
-## Follow-up: 
+??? question "Follow-up:"
+
+

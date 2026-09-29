@@ -1,10 +1,12 @@
 ---
 tags:
   - Verilog
+title: "What are the different types of operators in Verilog?"
 ---
 
 # What are the different types of operators in Verilog? Can you provide examples?
 
+## Answer
 
 Logical
 

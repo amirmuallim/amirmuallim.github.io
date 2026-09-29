@@ -1,10 +1,12 @@
 ---
 tags:
   - Digital-Electronics
+title: "Define clock skew"
 ---
 
 # Define clock skew.
 
+## Answer
 
 Clock skew is the difference in the arrival time of the same clock edge at two different sequential elements (flip-flops) in a circuit.
 

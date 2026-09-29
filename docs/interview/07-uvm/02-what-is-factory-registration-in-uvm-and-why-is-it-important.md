@@ -1,10 +1,12 @@
 ---
 tags:
   - UVM
+title: "What is factory registration in UVM, and why is it important?"
 ---
 
 # What is factory registration in UVM, and why is it important?
 
+## Answer
 
 **Factory registration means registering a UVM class with the UVM factory so that the factory knows about that class and can create and override objects or components of that type.**
 

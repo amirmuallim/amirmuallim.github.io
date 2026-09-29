@@ -1,10 +1,12 @@
 ---
 tags:
   - UVM
+title: "Can you explain the UVM execution phases?"
 ---
 
 # Can you explain the UVM execution phases? Which ones are function phases versus task phases, and why is run_phase unique?
 
+## Answer
 
 UVM phases manage testbench execution in an orderly sequence. They are divided into three main groups:
 
@@ -16,8 +18,8 @@ UVM phases manage testbench execution in an orderly sequence. They are divided i
 
 The run_phase is unique because it is the only phase where actual simulation time advances and driver/monitor activity occurs, governed by UVM objections (raise_objection / drop_objection).
 
-## Follow-up: Why is the build_phase executed top-down, but the connect_phase executed bottom-up?
+??? question "Follow-up: Why is the build_phase executed top-down, but the connect_phase executed bottom-up?"
 
-build_phase runs **top-down** so parent components (like the test environment) can create and configure child components (like agents and drivers) using the UVM Configuration Database.
+    build_phase runs **top-down** so parent components (like the test environment) can create and configure child components (like agents and drivers) using the UVM Configuration Database.
 
-connect_phase runs **bottom-up** because lower-level components must first instantiate their local TLM ports/exports before parent components can bind those connections upward to scoreboards or virtual sequencers.
+    connect_phase runs **bottom-up** because lower-level components must first instantiate their local TLM ports/exports before parent components can bind those connections upward to scoreboards or virtual sequencers.

@@ -1,10 +1,12 @@
 ---
 tags:
   - Digital-Electronics
+title: "How to calculate Setup and hold time calculation"
 ---
 
 # How to calculate Setup and hold time calculation.
 
+## Answer
 
 The most important formulas to memorize
 

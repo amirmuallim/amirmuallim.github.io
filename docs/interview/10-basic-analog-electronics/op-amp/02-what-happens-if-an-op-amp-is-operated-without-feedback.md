@@ -1,10 +1,12 @@
 ---
 tags:
   - Analog-Basic-Electronics
+title: "What Happens if an Op-Amp is Operated Without Feedback?"
 ---
 
 # What Happens if an Op-Amp is Operated Without Feedback?
 
+## Answer
 
 Open-Loop Gain is Extremely High
 

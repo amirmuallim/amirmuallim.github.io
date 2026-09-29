@@ -1,10 +1,12 @@
 ---
 tags:
   - Digital-Electronics
+title: "What is the race-around condition?"
 ---
 
 # What is the race-around condition? Explain it in case of J-K Latch and solution to avoid that?
 
+## Answer
 
 The race around condition means: the output oscillates between 0s & 1s
 

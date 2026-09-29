@@ -1,49 +1,49 @@
 ---
 tags:
   - Digital-Electronics
+title: "TRICK QUESITIONS WITH TECHNIQUES"
 ---
 
 # TRICK QUESITIONS WITH TECHNIQUES
 
+??? note "OR GATE using HA"
 
-## OR GATE using HA
+    ![](../../assets/qa/image4.png){ loading=lazy }
 
-![](../../assets/qa/image4.png){ loading=lazy }
+??? note "NOR using NAND"
 
-## NOR using NAND
+    ![](../../assets/qa/image5.png){ loading=lazy }
 
-![](../../assets/qa/image5.png){ loading=lazy }
+??? note "Half Subtractor using nor gate"
 
-## Half Subtractor using nor gate
+    ![](../../assets/qa/image6.png){ loading=lazy }
 
-![](../../assets/qa/image6.png){ loading=lazy }
+??? note "RADIX conversion from radix (n! =10) to radix (n! = 10) or (153)12=(X)8+(32)5"
 
-## RADIX conversion from radix (n! =10) to radix (n! = 10) or (153)12=(X)8+(32)5
+    Convert TO radix 10 then required radix
 
-Convert TO radix 10 then required radix
+??? note "Propagation Delay formula"
 
-## Propagation Delay formula
+    Basic formula
 
-Basic formula
+    $$\boxed{t_{pd} = t_{output} - t_{input}}
+    $$
 
-$$\boxed{t_{pd} = t_{output} - t_{input}}
-$$
+    For a logic gate, we commonly have two delays:
 
-For a logic gate, we commonly have two delays:
+    $$\boxed{t_{pLH}}
+    $$
 
-$$\boxed{t_{pLH}}
-$$
+    Delay when output changes **Low → High**
 
-Delay when output changes **Low → High**
+    and
 
-and
+    $$\boxed{t_{pHL}}
+    $$
 
-$$\boxed{t_{pHL}}
-$$
+    Delay when output changes **High → Low**.
 
-Delay when output changes **High → Low**.
+    Average propagation delay
 
-Average propagation delay
-
-$$\boxed{t_{pd} = \frac{t_{pLH} + t_{pHL}}{2}}
-$$
+    $$\boxed{t_{pd} = \frac{t_{pLH} + t_{pHL}}{2}}
+    $$

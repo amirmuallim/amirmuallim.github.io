@@ -1,10 +1,12 @@
 ---
 tags:
   - Verilog
+title: "What is the difference between wire and reg in Verilog?"
 ---
 
 # What is the difference between wire and reg in Verilog?
 
+## Answer
 
 **The main difference between wire and reg is how they are driven in Verilog.**
 

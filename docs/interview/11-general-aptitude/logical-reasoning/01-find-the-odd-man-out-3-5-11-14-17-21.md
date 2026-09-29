@@ -1,10 +1,12 @@
 ---
 tags:
   - Aptitude
+title: "Find the odd man out: 3, 5, 11, 14, 17, 21"
 ---
 
 # Find the odd man out: 3, 5, 11, 14, 17, 21
 
+## Answer
 
 14
 

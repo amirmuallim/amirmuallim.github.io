@@ -1,10 +1,12 @@
 ---
 tags:
   - Digital-Electronics
+title: "What is the difference between a flip-flop and a latch?"
 ---
 
 # What is the difference between a flip-flop and a latch?
 
+## Answer
 
 **The main difference between a latch and a flip-flop is how they are triggered.**
 
@@ -14,6 +16,6 @@ For example, in a positive-level D latch, when the enable signal is HIGH, the la
 
 In contrast, a positive-edge-triggered D flip-flop samples the input only at the rising edge of the clock and holds that value until the next active edge.
 
-## Follow-up: Why are flip-flops generally preferred over latches in synchronous RTL design?
+??? question "Follow-up: Why are flip-flops generally preferred over latches in synchronous RTL design?"
 
-The main reason is timing predictability.
+    The main reason is timing predictability.

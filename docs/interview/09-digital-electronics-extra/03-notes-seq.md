@@ -1,67 +1,67 @@
 ---
 tags:
   - Digital-Electronics
+title: "NOTES SEQ"
 ---
 
 # NOTES SEQ
 
+??? note "FF Conversion -> FF to FF"
 
-## FF Conversion -> FF to FF
+    Required Info =\> Truth table of req FF, excitation or available FF, next state or characteristic equation , minimization of equation.
 
-Required Info =\> Truth table of req FF, excitation or available FF, next state or characteristic equation , minimization of equation.
+    | **Conversion** | **Input equations**             |
+    |----------------|---------------------------------|
+    | **D → JK**     | $$D = J\bar{Q} + \bar{K}Q$$     |
+    | **D → T**      | $$D = T\oplus_{}^{}Q$$          |
+    | **D → SR**     | $$D = S + \bar{R}Q$$            |
+    | **JK → D**     | $$J = D,\text{~}K = \bar{D}$$   |
+    | **JK → T**     | $$J = K = T$$                   |
+    | **JK → SR**    | $J = S,\text{~}K = R$\*         |
+    | **T → D**      | $$T = D\oplus_{}^{}Q$$          |
+    | **T → JK**     | $$T = J\bar{Q} + KQ$$           |
+    | **T → SR**     | $$T = S\bar{Q} + RQ$$           |
+    | **SR → D**     | $$S = D,\text{~}R = \bar{D}$$   |
+    | **SR → JK**    | $$S = J\bar{Q},\text{~}R = KQ$$ |
 
-| **Conversion** | **Input equations**             |
-|----------------|---------------------------------|
-| **D → JK**     | $$D = J\bar{Q} + \bar{K}Q$$     |
-| **D → T**      | $$D = T\oplus_{}^{}Q$$          |
-| **D → SR**     | $$D = S + \bar{R}Q$$            |
-| **JK → D**     | $$J = D,\text{~}K = \bar{D}$$   |
-| **JK → T**     | $$J = K = T$$                   |
-| **JK → SR**    | $J = S,\text{~}K = R$\*         |
-| **T → D**      | $$T = D\oplus_{}^{}Q$$          |
-| **T → JK**     | $$T = J\bar{Q} + KQ$$           |
-| **T → SR**     | $$T = S\bar{Q} + RQ$$           |
-| **SR → D**     | $$S = D,\text{~}R = \bar{D}$$   |
-| **SR → JK**    | $$S = J\bar{Q},\text{~}R = KQ$$ |
+    \*Assuming the SR input combination $S = R = 1$is not used.
 
-\*Assuming the SR input combination $S = R = 1$is not used.
+??? note "JK USING DFF , 2:1 MUX AND INVERTOR"
 
-## JK USING DFF , 2:1 MUX AND INVERTOR
+    ![](../../assets/qa/image10.png){ loading=lazy }
 
-![](../../assets/qa/image10.png){ loading=lazy }
+??? note "Design a d flipflop and d latch using mux"
 
-## Design a d flipflop and d latch using mux
+    1.  **1. D Latch using 2:1 MUX**
 
-1.  **1. D Latch using 2:1 MUX**
+    A D latch has an **Enable (EN)**.
 
-A D latch has an **Enable (EN)**.
+    Behavior:
 
-Behavior:
+    - EN = 1 → $Q = D$
 
-- EN = 1 → $Q = D$
+    - EN = 0 → $Q$**holds its previous value**
 
-- EN = 0 → $Q$**holds its previous value**
+    Use a **2:1 MUX with feedback**:
 
-Use a **2:1 MUX with feedback**:
+    ┌──────────────┐
 
-┌──────────────┐
+    D ──────►│ 0 Y ├────► Q
 
-D ──────►│ 0 Y ├────► Q
+    │ │
 
-│ │
+    Q ──────►│ 1 2:1 │
 
-Q ──────►│ 1 2:1 │
+    │ MUX │
 
-│ MUX │
+    EN ─────►│ Select │
 
-EN ─────►│ Select │
+    └──────────────┘
 
-└──────────────┘
+    D
 
-D
+    MASTER LATCH SLAVE LATCH
 
-MASTER LATCH SLAVE LATCH
+    D ───────► \[ D LATCH \] ───────► \[ D LATCH \] ─────► Q
 
-D ───────► \[ D LATCH \] ───────► \[ D LATCH \] ─────► Q
-
-EN = CLK EN = ~CLK
+    EN = CLK EN = ~CLK

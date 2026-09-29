@@ -1,10 +1,12 @@
 ---
 tags:
   - Digital-Electronics
+title: "How does negative clock skew impact setup and hold time?"
 ---
 
 # How does negative clock skew impact setup and hold time?
 
+## Answer
 
 **Negative skew → capture comes early → less setup time, but more hold margin.**
 
