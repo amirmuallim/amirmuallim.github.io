@@ -1,0 +1,40 @@
+site_name: Amir | VLSI Design & Verification
+site_url: https://amirmuallim.github.io/
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: black
+    accent: green
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+plugins:
+  - search
+  - tags
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+# No nav: needed. Folders and files under docs/ become the sidebar automatically.
