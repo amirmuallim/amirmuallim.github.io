@@ -178,9 +178,9 @@ I’m particularly interested in roles involving **RTL development, SystemVerilo
 
 ## Contact { #contact }
 
-**Email:** your-email@example.com
+**Email:** amirmuallim123@gmail.com
 
-**LinkedIn:** [LinkedIn Profile](your-link)
+**LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/amir-muallim/)
 
 **GitHub:** [GitHub Profile](https://github.com/amirmuallim)
 
